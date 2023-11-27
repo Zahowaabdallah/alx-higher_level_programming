@@ -1,1 +1,2 @@
 #!/bin/bash
+bython3 -c "$PYCODE"
