@@ -1,3 +1,5 @@
-#!/usr/bin/python3
-for i in range(99):
-    print("{0} = 0x{0:x}" .format(i))
+ش#!/usr/bin/python3
+
+"""Print numbers 0 to 98 in decimal and hexadecimal."""
+for number in range(0, 99):
+    print("{} = {}".format(number, hex(number)))
