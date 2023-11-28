@@ -1,4 +1,4 @@
-ش#include "lists.h"
+#include "lists.h"
 #include <stdlib.h>
 /**
 insert_node - Inserts a number into a sorted s
