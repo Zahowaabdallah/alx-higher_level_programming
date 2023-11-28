@@ -6,4 +6,4 @@ print(f"{number:d} is positive")
 elif number == 0:
     print(f"{number:d} is zero")
 else:
-    printf"{number:d} is negative")
+    print(f"{number:d} is negative")
