@@ -1,12 +1,11 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
-insert_node - Inserts a number into a sorted s
-ingly-linked list.
- * @head: adress of head pointer
-* @number: The number to insert
+ * insert_node - Inserts node in sorted list
+ * @head: address of head pointer
+ * @number: The number to insert
  * Return: inserted node
-*/
+ */
 listint_t *insert_node(listint_t **head, int numb
 er)
 {
@@ -16,11 +15,14 @@ zeof(listint_t));
                 return (NULL);
         new->n = number;
         new->next = NULL;
+
         if (!node || new->n < node->n)
         {
                 new->next = node;
-                return (*head = new);
+		*head = new;
+                return (new);
         }
+
         while (node)
         {
                 if (!node->next || new->n < node-
@@ -28,9 +30,10 @@ zeof(listint_t));
                 {
                         new->next = node->next;
                         node->next = new;
-                        return (node);
+                        return (new);
                 }
                 node = node->next;
         }
+
         return (NULL);
 }
