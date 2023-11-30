@@ -1,4 +1,4 @@
-afrom magic_calculation_102 import add, sub
+from magic_calculation_102 import add, sub
 
 
 def magic_calculation(a, b):
